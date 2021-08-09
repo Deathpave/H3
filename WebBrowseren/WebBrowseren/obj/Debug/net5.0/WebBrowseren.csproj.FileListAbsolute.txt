@@ -1,0 +1,16 @@
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\bin\Debug\net5.0\WebBrowseren.exe
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\bin\Debug\net5.0\WebBrowseren.deps.json
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\bin\Debug\net5.0\WebBrowseren.runtimeconfig.json
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\bin\Debug\net5.0\WebBrowseren.runtimeconfig.dev.json
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\bin\Debug\net5.0\WebBrowseren.dll
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\bin\Debug\net5.0\ref\WebBrowseren.dll
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\bin\Debug\net5.0\WebBrowseren.pdb
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.csproj.AssemblyReference.cache
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.AssemblyInfoInputs.cache
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.AssemblyInfo.cs
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.csproj.CoreCompileInputs.cache
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.dll
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\ref\WebBrowseren.dll
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.pdb
+C:\Users\marti\source\repos\H3\WebBrowseren\WebBrowseren\obj\Debug\net5.0\WebBrowseren.genruntimeconfig.cache

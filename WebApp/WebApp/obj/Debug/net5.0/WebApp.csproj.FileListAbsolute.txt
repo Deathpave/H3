@@ -105,11 +105,3 @@ C:\Users\marti\source\repos\H3\WebApp\WebApp\bin\Debug\net5.0\runtimes\win-arm\l
 C:\Users\marti\source\repos\H3\WebApp\WebApp\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\marti\source\repos\H3\WebApp\WebApp\bin\Debug\net5.0\WebApp.Views.dll
 C:\Users\marti\source\repos\H3\WebApp\WebApp\bin\Debug\net5.0\WebApp.Views.pdb
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\WebApp.RazorAssemblyInfo.cache
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\WebApp.RazorAssemblyInfo.cs
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\WebApp.TagHelpers.input.cache
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\WebApp.TagHelpers.output.cache
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\WebApp.RazorCoreGenerate.cache
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\WebApp.RazorTargetAssemblyInfo.cs
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\WebApp.Views.pdb
-C:\Users\marti\source\repos\H3\WebApp\WebApp\obj\Debug\net5.0\Razor\Views\ViewPage.cshtml.g.cs
