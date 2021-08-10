@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkandCookies", "MilkandCookies\MilkandCookies.csproj", "{C2A95972-041D-49CB-9CD2-0C55C0ED8CDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2A95972-041D-49CB-9CD2-0C55C0ED8CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A95972-041D-49CB-9CD2-0C55C0ED8CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A95972-041D-49CB-9CD2-0C55C0ED8CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A95972-041D-49CB-9CD2-0C55C0ED8CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74CDFEDF-367F-4324-989C-D3893D4B537A}
+	EndGlobalSection
+EndGlobal
