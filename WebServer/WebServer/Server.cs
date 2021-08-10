@@ -119,7 +119,7 @@ namespace WebServer
         private void ConnectionHandler(Socket clientSocket)
         {
             // creates a buffer for the message
-            byte[] buffer = new byte[1024];
+            byte[] buffer = new byte[10240];
             // received bytes from the client socket
             int receivedBytes = clientSocket.Receive(buffer);
             // transform bytes to string via encoding
@@ -140,22 +140,30 @@ namespace WebServer
             }
             else
             {
+                // sends a response to the client
                 sendResponse(clientSocket, new byte[0], "", "404");
                 return;
             }
 
             if (file != null)
             {
+                // ensures filepath is in correct format
                 file = file.Replace("/", @"\").Replace("\\..", "");
+                // find where the extension starts
                 start = file.LastIndexOf('.') + 1;
                 if (start > 0)
                 {
+                    // length of file without extension
                     length = file.Length - start;
+                    // extension name
                     string extension = file.Substring(start, length);
+                    // if the extension is supported 
                     if (extensions.ContainsKey(extension))
                     {
+                        // if the file exists in the content folder
                         if (File.Exists(_contentPath + file))
                         {
+                            // responds the client  with the file as byte[]
                             sendResponse(clientSocket, File.ReadAllBytes(_contentPath + file), extension);
                         }
                         else
@@ -171,13 +179,16 @@ namespace WebServer
         {
             try
             {
+                // creates a header byte[]
                 byte[] header = _encoder.GetBytes(
                     "HTTP/1.1 " + code + "\r\n"
                     + "Server: H3MM\r\n"
                     + "Content-Length: " + byteContent.Length.ToString() + "\r\n"
                     + "Connection: close\r\n"
                     + "Content-Type: " + contenttype + "\r\n\r\n");
+                // sends the header byte[]
                 client.Send(header);
+                // sends the content of the file
                 client.Send(byteContent);
                 client.Close();
             }
