@@ -1,0 +1,16 @@
+C:\Users\marti\source\repos\H3\WebServer\WebServer\bin\Debug\net5.0\WebServer.exe
+C:\Users\marti\source\repos\H3\WebServer\WebServer\bin\Debug\net5.0\WebServer.deps.json
+C:\Users\marti\source\repos\H3\WebServer\WebServer\bin\Debug\net5.0\WebServer.runtimeconfig.json
+C:\Users\marti\source\repos\H3\WebServer\WebServer\bin\Debug\net5.0\WebServer.runtimeconfig.dev.json
+C:\Users\marti\source\repos\H3\WebServer\WebServer\bin\Debug\net5.0\WebServer.dll
+C:\Users\marti\source\repos\H3\WebServer\WebServer\bin\Debug\net5.0\ref\WebServer.dll
+C:\Users\marti\source\repos\H3\WebServer\WebServer\bin\Debug\net5.0\WebServer.pdb
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.csproj.AssemblyReference.cache
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.AssemblyInfoInputs.cache
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.AssemblyInfo.cs
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.csproj.CoreCompileInputs.cache
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.dll
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\ref\WebServer.dll
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.pdb
+C:\Users\marti\source\repos\H3\WebServer\WebServer\obj\Debug\net5.0\WebServer.genruntimeconfig.cache
