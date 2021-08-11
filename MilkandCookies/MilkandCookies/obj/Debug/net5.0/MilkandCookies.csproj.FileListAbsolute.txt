@@ -26,3 +26,4 @@ C:\Users\marti\source\repos\H3\MilkandCookies\MilkandCookies\obj\Debug\net5.0\Mi
 C:\Users\marti\source\repos\H3\MilkandCookies\MilkandCookies\obj\Debug\net5.0\ref\MilkandCookies.dll
 C:\Users\marti\source\repos\H3\MilkandCookies\MilkandCookies\obj\Debug\net5.0\MilkandCookies.pdb
 C:\Users\marti\source\repos\H3\MilkandCookies\MilkandCookies\obj\Debug\net5.0\MilkandCookies.genruntimeconfig.cache
+C:\Users\marti\source\repos\H3\MilkandCookies\MilkandCookies\obj\Debug\net5.0\MilkandCookies.csproj.AssemblyReference.cache
