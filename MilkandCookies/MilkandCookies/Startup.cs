@@ -26,6 +26,10 @@ namespace MilkandCookies
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add MVC services to the services container.
+            services.AddMvc();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -37,6 +41,16 @@ namespace MilkandCookies
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // tells the api to use session
+            app.UseSession();
+
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Home}/{action=Index}/{id?}");
+            //});
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

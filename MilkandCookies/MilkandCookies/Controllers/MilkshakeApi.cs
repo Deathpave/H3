@@ -12,7 +12,7 @@ namespace MilkandCookies.Controllers
     public class MilkshakeApi : Controller
     {
         [HttpGet]
-        [Route("[action]")]
+        // [Route("[action]")]
         public string GetMilkshake()
         {
             // gets the value from the cookie
@@ -31,7 +31,15 @@ namespace MilkandCookies.Controllers
         [Route("{taste?}")]
         public string GetMilkshake(string taste)
         {
-            Response.Cookies.Append("favoritmilkshake", taste);
+            // sets options for cookie
+            CookieOptions cookieOptions = new CookieOptions();
+            // creates new timespan 5 minutes
+            TimeSpan timeSpan = new TimeSpan(0, 5, 0);
+            // sets cookies life time
+            cookieOptions.MaxAge = timeSpan;
+            // adds cookie with options
+            Response.Cookies.Append("favoritmilkshake", taste, cookieOptions);
+            // returns response
             return "milkshake with taste of: " + taste;
         }
     }
