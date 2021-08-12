@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Vittighedsmaskinen.Controllers
 {
-    [ApiController
-        [Route("[controller]")]
+    [ApiController]
+    [Route("[controller]")]
     public class VittighedController : Controller
     {
 
