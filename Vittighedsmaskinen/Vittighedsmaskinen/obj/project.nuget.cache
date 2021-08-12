@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "udOwUehx8rSg4kyPZeOtyJjo6oGNHxIQHR2pWlx0FF/sYpr4wn3EgDQF3MzYJAlWG2xfrC0iF13nM4GnAI/HZw==",
+  "dgSpecHash": "D/ppEPFX/7khS8k/Rhu3PRNBYPbhccocwGNe4yANPe6cRUqRxbcPa/RR0XpeQ92jkXMOALJPtRm1k7q2Rsizzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\marti\\source\\repos\\H3\\Vittighedsmaskinen\\Vittighedsmaskinen\\Vittighedsmaskinen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
