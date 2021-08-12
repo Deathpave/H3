@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vittighedsmaskinen", "Vittighedsmaskinen\Vittighedsmaskinen.csproj", "{48F69F68-9B4B-4F50-B0CA-3C3CCD5CC7B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F69F68-9B4B-4F50-B0CA-3C3CCD5CC7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F69F68-9B4B-4F50-B0CA-3C3CCD5CC7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F69F68-9B4B-4F50-B0CA-3C3CCD5CC7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F69F68-9B4B-4F50-B0CA-3C3CCD5CC7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4982FC58-E4A7-4F7B-BD9C-7EF4D062D177}
+	EndGlobalSection
+EndGlobal
