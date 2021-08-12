@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("57e9ee11-2c9f-4d61-ae4e-d29b300a7534")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("661801d6-aebe-4d83-bd28-31faabf8c65f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vittighedsmaskinen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
