@@ -74,7 +74,15 @@ namespace Vittighedsmaskinen.DontLook
 
         public static List<Joke> GetDirtyJokes()
         {
-            return new List<Joke>();
+            List<Joke> jokes = new List<Joke>()
+            {
+                new Joke(){Category= Category.DirtyJokes , Language = Language.English, Text = @"""Give it to me! Give it to me!"" she yelled. ""I''m so wet, give it to me now!"" She could scream all she wanted, but I was keeping the umbrella."},
+                new Joke(){Category= Category.DirtyJokes , Language = Language.English, Text = "My neighbor has been mad at his wife for sunbathing nude. I personally am on the fence."},
+                new Joke(){Category= Category.DirtyJokes , Language = Language.English, Text = "What comes after 69? Mouthwash."},
+                new Joke(){Category= Category.DirtyJokes , Language = Language.English, Text = "What's the difference between your penis and a bonus check? Someone's always willing to blow your bonus."},
+                new Joke(){Category= Category.DirtyJokes , Language = Language.English, Text = @"A family's driving behind a garbage truck when a dildo flies out and thumps against the windshield. Embarrassed, and trying to spare her young son's innocence, the mother turns around and says, ""Don't worry, dear. That was just an insect."" ""Wow,"" the boy replies. ""I'm surprised it could get off the ground with a cock like that!"""}
+            };
+            return jokes;
         }
     }
 }

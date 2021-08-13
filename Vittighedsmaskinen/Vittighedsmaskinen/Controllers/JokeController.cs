@@ -43,11 +43,40 @@ namespace Vittighedsmaskinen.Controllers
         {
             CookieManager cookieManager = new CookieManager();
             string value = cookieManager.SetCategoryCookie(Cat);
-            if (value != string.Empty)
+            if (value != string.Empty && value != "Category not allowed!")
             {
                 HttpContext.Response.Cookies.Append("FavCat", value);
+                return "Preferred category set!";
             }
-            return "Preferred category set!";
+            if (value != string.Empty)
+            {
+                return value;
+            }
+            else
+            {
+                return "Category not found";
+            }
+        }
+
+        [HttpGet]
+        [Route("Category/{Cat}/{ApiKey}")]
+        public string SetCategory(string Cat, string ApiKey)
+        {
+            CookieManager cookieManager = new CookieManager();
+            string value = cookieManager.SetCategoryCookie(Cat, ApiKey);
+            if (value != string.Empty && value != "Category not allowed!")
+            {
+                HttpContext.Response.Cookies.Append("FavCat", value);
+                return "Preferred category set!";
+            }
+            if (value != string.Empty)
+            {
+                return value;
+            }
+            else
+            {
+                return "Category not found";
+            }
         }
     }
 }

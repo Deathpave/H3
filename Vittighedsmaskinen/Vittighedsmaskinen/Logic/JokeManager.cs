@@ -133,5 +133,10 @@ namespace Vittighedsmaskinen.Logic
             // returns the joke and the used joke json strings
             return new Tuple<string, string>(foundJoke, json);
         }
+
+        public Tuple<string, string> GetRandomByCategory(HttpContext context, string cat)
+        {
+
+        }
     }
 }
