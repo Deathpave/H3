@@ -28,7 +28,7 @@ namespace Vittighedsmaskinen.DontLook
         //    public static Joke BadJoke4 = new Joke(Category.BadJokes, "Jesper: Jeg fandt en falsk 100 kr seddel idag\nMaria: Hvordan kunne du se den var falsk ?\nJesper : Der var 3 nuller i stedet for 2 så jeg skyndte mig at rive den over!", Language.Dansk);
         // public static Joke BadJoke5 = new Joke(Category.BadJokes, "", Language.Dansk);
 
-        public static List<Joke> GetAllJokes()
+        public static List<Joke> GetDaJokes()
         {
             List<Joke> jokes = new List<Joke>()
             {
@@ -51,6 +51,30 @@ namespace Vittighedsmaskinen.DontLook
 
         };
             return jokes;
+        }
+
+        public static List<Joke> GetEnJokes()
+        {
+            List<Joke> jokes = new List<Joke>()
+            {
+                new Joke(){Category= Category.DadJokes , Language = Language.English, Text = "I'm afraid for the calendar. Its days are numbered."},
+                new Joke(){Category= Category.DadJokes, Language = Language.English, Text = "How do you follow Will Smith in the snow? "+ "You follow the fresh prints."},
+                new Joke(){Category= Category.DadJokes, Language = Language.English, Text = "Have you heard about the chocolate record player? It sounds pretty sweet."},
+                new Joke(){Category= Category.DadJokes, Language = Language.English, Text = "What did Baby Corn say to Mama Corn? "+ "Where's Pop Corn?"},
+                new Joke(){Category= Category.DadJokes, Language = Language.English, Text = "I don't trust stairs. They're always up to something."},
+
+                new Joke(){Category= Category.KnockKnockJokes, Language = Language.English, Text = "Knock, Knock\nWho’s there?\nNobel.\nNobel who?\nNobel…that’s why I knocked!"},
+                new Joke(){Category= Category.KnockKnockJokes, Language = Language.English, Text = "Knock, knock.\nWho’s there?\nTank.\nTank who?\nYou’re welcome."},
+                new Joke(){Category= Category.KnockKnockJokes, Language = Language.English, Text = "Knock, knock.\nWho’s there?\nHoney bee.\nHoney bee who?\nHoney bee a dear and get that for me please!"},
+                new Joke(){Category= Category.KnockKnockJokes, Language = Language.English, Text = "Knock, knock.\nWho’s there?\nHawaii.\nHawaii who?\nI’m good. Hawaii you?"},
+                new Joke(){Category= Category.KnockKnockJokes, Language = Language.English, Text = "Knock, knock.\nWho’s there?\nLeaf.\nLeaf who?\nLeaf me alone!"}
+            };
+            return jokes;
+        }
+
+        public static List<Joke> GetDirtyJokes()
+        {
+            return new List<Joke>();
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Vittighedsmaskinen.DataModels
         DadJokes,
         KnockKnockJokes,
         BadJokes,
-        YourMamaJokes
+        YourMamaJokes,
+        DirtyJokes
     }
 }
