@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Vittighedsmaskinen.DataModels;
+using Vittighedsmaskinen.Logic;
 
 namespace Vittighedsmaskinen.Controllers
 {
@@ -15,7 +17,11 @@ namespace Vittighedsmaskinen.Controllers
         [Route("Random")]
         public string GetRandom()
         {
-            return "Random joke!";
+            JokeManager manager = new JokeManager();
+            Tuple<string, string> res = manager.GetRandomJoke(HttpContext);
+            HttpContext.Session.SetString("UsedJokes", res.Item2);
+
+            return res.Item1;
         }
     }
 }
