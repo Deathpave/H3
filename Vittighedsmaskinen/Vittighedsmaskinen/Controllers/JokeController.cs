@@ -17,9 +17,17 @@ namespace Vittighedsmaskinen.Controllers
         [Route("Random")]
         public string GetRandom()
         {
+            Tuple<string, string> res;
             JokeManager manager = new JokeManager();
-            //Tuple<string, string> res = manager.GetRandomJoke(HttpContext);
-            Tuple<string, string> res = manager.GetRandomJokeLanguage(HttpContext);
+            string cookie = Request.Cookies["FavCat"];
+            if (cookie != string.Empty && cookie != null)
+            {
+                res = manager.GetRandomByCategory(HttpContext, cookie);
+            }
+            else
+            {
+                res = manager.GetRandomJokeLanguage(HttpContext);
+            }
             HttpContext.Session.SetString("UsedJokes", res.Item2);
 
             return res.Item1;
