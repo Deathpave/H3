@@ -8,6 +8,7 @@ namespace ATM
 {
     class Program
     {
+        // ui
         static void Main(string[] args)
         {
         }
