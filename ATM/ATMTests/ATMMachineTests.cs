@@ -10,11 +10,11 @@ namespace ATMTests
 {
     public class ATMMachineTests
     {
-
-        [Fact]
-        public bool Insert()
+        [Theory]
+        [InlineData(555)]
+        public void Insert(int pass)
         {
-
+            bool result = false;
             // arrange
 
             CreditCard card = new CreditCard("test", 123, 321, 555);
@@ -23,16 +23,15 @@ namespace ATMTests
 
             // act
 
-            if (acc.AccountNumber == card.Account && card.Password == 555)
+            if (acc.AccountNumber == card.Account && card.Password == pass)
             {
                 acc.Amount += amount;
-                return true;
+                result = true;
             }
-            else
-            {
-                return false;
-            }
+
             // assert
+            Assert.Equal(true, result);
         }
+
     }
 }

@@ -48,6 +48,7 @@
     <Compile Include="DataModels\CreditCard.cs" />
     <Compile Include="DataModels\Interfaces\IATM.cs" />
     <Compile Include="Managers\AccountManager.cs" />
+    <Compile Include="Managers\CardManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
