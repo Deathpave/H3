@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATM.Managers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,18 +11,50 @@ namespace ATM.DataModels
     {
         public int ATMNumber { get; private set; }
 
-        public void Deposit(CreditCard Card, double Amount)
+        public double Deposit(CreditCard Card, int Password, double Amount)
         {
-            throw new NotImplementedException();
+            // add handling for double exceeding max val
+
+            double res = 0;
+            BankAccount acc = AccountManager.GetAccounts().Where(o => o.AccountNumber == Card.Account).FirstOrDefault();
+
+            if (acc != null && Card.Password == Password)
+            {
+                acc.Balance += Amount;
+                res = Amount;
+            }
+
+            return res;
         }
 
         public double Withdraw(CreditCard card, int Password, double Amount)
         {
-            throw new NotImplementedException();
+            double res = 0;
+            BankAccount acc = AccountManager.GetAccounts().Where(o => o.AccountNumber == card.Account).FirstOrDefault();
+
+            if (acc != null && card.Password == Password && acc.Balance >= Amount && Amount > 0)
+            {
+                acc.Balance -= Amount;
+                res = Amount;
+            }
+            else
+            {
+                res = 0;
+            }
+
+            return res;
         }
         public double Balance(CreditCard Card, int Password)
         {
-            throw new NotImplementedException();
+            double res = 0;
+            BankAccount acc = AccountManager.GetAccounts().Where(o => o.AccountNumber == Card.Account).FirstOrDefault();
+
+            if (acc != null && Card.Password == Password && Card.Account == acc.AccountNumber)
+            {
+                res = acc.Balance;
+            }
+
+            return res;
         }
     }
 }

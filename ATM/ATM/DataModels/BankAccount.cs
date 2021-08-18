@@ -11,9 +11,9 @@ namespace ATM.DataModels
         public BankAccount(int accountNumber)
         {
             AccountNumber = accountNumber;
-            Amount = 0;
+            Balance = 0;
         }
         public int AccountNumber { get; private set; }
-        public double Amount { get; set; }
+        public double Balance { get; set; }
     }
 }

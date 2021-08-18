@@ -9,7 +9,7 @@ namespace ATM.Managers
 {
     public class AccountManager
     {
-        private List<BankAccount> _bankAccounts = new List<BankAccount>();
+        private static List<BankAccount> _bankAccounts = new List<BankAccount>();
 
         public BankAccount NewBankAccount()
         {
@@ -17,6 +17,11 @@ namespace ATM.Managers
             BankAccount bankAccount = new BankAccount(random.Next(10000000, 99999999));
             _bankAccounts.Add(bankAccount);
             return bankAccount;
+        }
+
+        public static List<BankAccount> GetAccounts()
+        {
+            return _bankAccounts;
         }
     }
 }

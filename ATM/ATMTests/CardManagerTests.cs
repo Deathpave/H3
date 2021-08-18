@@ -12,7 +12,7 @@ namespace ATMTests
     {
 
         [Theory]
-        [InlineData("test", 123]
+        [InlineData("test", 123)]
         public CreditCard NewCard(string cardholder, int account)
         {
             Random random = new Random();

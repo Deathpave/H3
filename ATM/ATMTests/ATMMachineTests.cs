@@ -12,7 +12,7 @@ namespace ATMTests
     {
         [Theory]
         [InlineData(555)]
-        public void Insert(int pass)
+        public void Deposit(int pass)
         {
             bool result = false;
             // arrange
@@ -25,7 +25,7 @@ namespace ATMTests
 
             if (acc.AccountNumber == card.Account && card.Password == pass)
             {
-                acc.Amount += amount;
+                acc.Balance += amount;
                 result = true;
             }
 
@@ -33,5 +33,44 @@ namespace ATMTests
             Assert.Equal(true, result);
         }
 
+        [Theory]
+        [InlineData(555, 200)]
+        public double Withdraw(int pass, int amount)
+        {
+            double res = 0;
+            CreditCard card = new CreditCard("test", 123, 321, 555);
+            BankAccount acc = new BankAccount(123);
+            acc.Balance = 200;
+
+            if (acc.AccountNumber == 123 && card.Password == pass && acc.Balance >= amount && amount > 0)
+            {
+                acc.Balance -= amount;
+                res = amount;
+            }
+            else
+            {
+                res = 0;
+            }
+
+            Assert.Equal(amount, res);
+            return res;
+        }
+
+        [Theory]
+        [InlineData(555)]
+        public double Balance(int pass)
+        {
+            double res = 0;
+            CreditCard card = new CreditCard("test", 123, 321, 555);
+            BankAccount acc = new BankAccount(123);
+
+            if (card.Password == pass && card.Account == acc.AccountNumber)
+            {
+                res = acc.Balance;
+            }
+
+            Assert.Equal(acc.Balance, res);
+            return res;
+        }
     }
 }

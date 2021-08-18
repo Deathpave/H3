@@ -9,7 +9,7 @@ namespace ATM.Managers
 {
     public class CardManager
     {
-        private List<CreditCard> _cards = new List<CreditCard>();
+        private static List<CreditCard> _cards = new List<CreditCard>();
 
         public CreditCard NewCreditCard(string cardholder, int account)
         {
