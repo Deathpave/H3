@@ -37,15 +37,18 @@ namespace ATM
                 switch (Console.ReadKey().Key)
                 {
                     case ConsoleKey.D0:
+                    case ConsoleKey.NumPad0:
                         _running = false;
                         break;
                     case ConsoleKey.D1:
+                    case ConsoleKey.NumPad1:
                         // pass
                         Console.WriteLine("Insert pincode");
                         int.TryParse(Console.ReadLine(), out int d1);
                         Console.WriteLine("Your balance: " + _atm.Balance(_card, d1));
                         break;
                     case ConsoleKey.D2:
+                    case ConsoleKey.NumPad2:
                         // pass
                         Console.WriteLine("Insert pincode");
                         int.TryParse(Console.ReadLine(), out int d2);
@@ -55,6 +58,7 @@ namespace ATM
                         Console.WriteLine("You have deposited: " + _atm.Deposit(_card, d2, d2b));
                         break;
                     case ConsoleKey.D3:
+                    case ConsoleKey.NumPad3:
                         // pass
                         Console.WriteLine("Insert pincode");
                         int.TryParse(Console.ReadLine(), out int d3);
@@ -67,7 +71,8 @@ namespace ATM
                         Console.WriteLine("Invalid input");
                         break;
                 }
-
+                Console.WriteLine("Press enter to continue");
+                Console.ReadLine();
             }
             Console.WriteLine("Thank you for using this atm");
             Console.ReadLine();

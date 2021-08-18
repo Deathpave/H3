@@ -13,8 +13,6 @@ namespace ATM.DataModels
 
         public double Deposit(CreditCard Card, int Password, double Amount)
         {
-            // add handling for double exceeding max val
-
             double res = 0;
             BankAccount acc = AccountManager.GetAccounts().Where(o => o.AccountNumber == Card.Account).FirstOrDefault();
 
