@@ -43,7 +43,7 @@ namespace ATM
                         // pass
                         Console.WriteLine("Insert pincode");
                         int.TryParse(Console.ReadLine(), out int d1);
-                        _atm.Balance(_card, d1);
+                        Console.WriteLine("Your balance: " + _atm.Balance(_card, d1));
                         break;
                     case ConsoleKey.D2:
                         // pass
@@ -52,7 +52,7 @@ namespace ATM
                         Console.WriteLine("Insert amount");
                         // amount
                         int.TryParse(Console.ReadLine(), out int d2b);
-                        _atm.Deposit(_card, d2, d2b);
+                        Console.WriteLine("You have deposited: " + _atm.Deposit(_card, d2, d2b));
                         break;
                     case ConsoleKey.D3:
                         // pass
@@ -61,7 +61,7 @@ namespace ATM
                         // amount
                         Console.WriteLine("Insert Amount");
                         int.TryParse(Console.ReadLine(), out int d3b);
-                        _atm.Withdraw(_card, d3, d3b);
+                        Console.WriteLine("You withdrew: " + _atm.Withdraw(_card, d3, d3b));
                         break;
                     default:
                         Console.WriteLine("Invalid input");

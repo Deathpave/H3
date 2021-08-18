@@ -20,8 +20,15 @@ namespace ATM.DataModels
 
             if (acc != null && Card.Password == Password)
             {
-                acc.Balance += Amount;
-                res = Amount;
+                try
+                {
+                    acc.Balance += Amount;
+                    res = Amount;
+                }
+                catch (OverflowException)
+                {
+                    res = 0;
+                }
             }
 
             return res;
