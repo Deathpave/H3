@@ -16,14 +16,12 @@ namespace ATM.DataModels
             Password = password;
 
             CardNumber = new Random().Next(1000, 10000);
-            ExpireDate = DateTime.Now.AddDays(10);
         }
 
         public int CardNumber { get; private set; }
         public string CardHolder { get; private set; }
         public int Account { get; private set; }
         public int RegNumber { get; private set; }
-        public DateTime ExpireDate { get; private set; }
         public int Password { get; private set; }
     }
 }

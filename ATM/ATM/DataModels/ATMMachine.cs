@@ -1,5 +1,4 @@
-﻿using ATM.DataModels.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace ATM.DataModels
 {
-    public class ATMMachine : IATM
+    public class ATMMachine
     {
         public int ATMNumber { get; private set; }
 
-        public void Insert(double Amount, CreditCard card)
+        public void Deposit(CreditCard Card, double Amount)
         {
             throw new NotImplementedException();
         }
 
-        public double Withdraw(double Amount, CreditCard card, int Password)
+        public double Withdraw(CreditCard card, int Password, double Amount)
+        {
+            throw new NotImplementedException();
+        }
+        public double Balance(CreditCard Card, int Password)
         {
             throw new NotImplementedException();
         }
