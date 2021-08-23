@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marti\\source\\repos\\H3\\WebApp\\WebApp\\WebApp.csproj": {}
+    "C:\\Users\\marti\\Source\\Repos\\H3\\WebApp\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marti\\source\\repos\\H3\\WebApp\\WebApp\\WebApp.csproj": {
+    "C:\\Users\\marti\\Source\\Repos\\H3\\WebApp\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\H3\\WebApp\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\Source\\Repos\\H3\\WebApp\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\marti\\source\\repos\\H3\\WebApp\\WebApp\\WebApp.csproj",
+        "projectPath": "C:\\Users\\marti\\Source\\Repos\\H3\\WebApp\\WebApp\\WebApp.csproj",
         "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\source\\repos\\H3\\WebApp\\WebApp\\obj\\",
+        "outputPath": "C:\\Users\\marti\\Source\\Repos\\H3\\WebApp\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
