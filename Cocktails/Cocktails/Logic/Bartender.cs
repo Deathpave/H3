@@ -22,10 +22,14 @@ namespace Cocktails.Logic
                 Ingredients = new List<Ingredient>() {
                     new Ingredient() {
                         Name = "Orange juice",
-                        Amount = "135ml" },
+                        Amount = 135,
+                    Unit = MeasureUnit.ml
+                    },
                     new Ingredient() {
                         Name = "Vodka",
-                        Amount = "45ml" } }
+                        Amount = 45,
+                    Unit = MeasureUnit.ml
+                    } }
             });
             ct.Cocktails.Add(new Cocktail()
             {
@@ -35,17 +39,20 @@ namespace Cocktails.Logic
                     new Ingredient()
                     {
                         Name = "Lime juice",
-                        Amount = "25ml"
+                        Amount = 25,
+                        Unit = MeasureUnit.ml
                     },
                     new Ingredient()
                     {
                         Name = "White rum",
-                        Amount = "45ml"
+                        Amount = 45,
+                        Unit = MeasureUnit.ml
                     },
                     new Ingredient()
                     {
                         Name = "Brown suger",
-                        Amount = "1 tablespoon"
+                        Amount = 1,
+                        Unit = MeasureUnit.tsp
                     }
                 }
             });
@@ -76,13 +83,14 @@ namespace Cocktails.Logic
             ct.SaveChanges();
         }
 
-        public Ingredient NewIngredient(string name, string amount)
+        public Ingredient NewIngredient(string name, int amount, IngredientType type)
         {
             // creates a new ingredient
             Ingredient ingredient = new Ingredient()
             {
                 Name = name,
-                Amount = amount
+                Amount = amount,
+                Type = type
             };
             // returns the ingredient
             return ingredient;
@@ -102,14 +110,19 @@ namespace Cocktails.Logic
 
         public bool RemoveIngredientFromCocktail(Cocktail cocktail, Ingredient ingredient)
         {
-            // tries to remove a ingredient from a given cocktail
-            var res = ct.Ingredients.Remove(ct.Cocktails.Where(c => c.Id == cocktail.Id).FirstOrDefault().Ingredients.Where(i => i.Id == ingredient.Id).FirstOrDefault());
-            // if removed res = removed ingredient
-            if (res != null)
+            // checks for nulls
+            if (cocktail != null && ingredient != null)
             {
-                // if removed save changes and return true
-                ct.SaveChanges();
-                return true;
+                // tries to remove a ingredient from a given cocktail
+                var res = ct.Ingredients.Remove(ct.Cocktails.Where(c => c.Id == cocktail.Id).FirstOrDefault().Ingredients.Where(i => i.Id == ingredient.Id).FirstOrDefault());
+                // if removed res = removed ingredient
+                if (res != null)
+                {
+                    // if removed save changes and return true
+                    ct.SaveChanges();
+                    return true;
+                }
+                return false;
             }
             else
             {

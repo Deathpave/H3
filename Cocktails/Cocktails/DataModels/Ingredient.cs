@@ -13,10 +13,12 @@ namespace Cocktails.DataModels
     {
         [Key]
         public int Id { get; set; }
-        [Column("Name")]
+        //[Column("Name")]
         public string Name { get; set; }
-        [Column("Amount")]
-        public string Amount { get; set; }
+        //[Column("Amount")]
+        public MeasureUnit Unit { get; set; }
+        public int Amount { get; set; }
+        public IngredientType Type { get; set; }
         public Ingredient()
         {
         }

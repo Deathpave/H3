@@ -13,7 +13,7 @@ namespace Cocktails.DataModels
     {
         [Key]
         public int Id { get; set; }
-        [Column("Name")]
+        //[Column("Name")]
         public string Name { get; set; }
 
         public List<Ingredient> Ingredients { get; set; }

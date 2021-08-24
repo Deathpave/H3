@@ -52,20 +52,20 @@ namespace CocktailUI
                 Console.WriteLine(item.Name + " - " + item.Amount);
             }
             // adds a new ingredient to the cocktail
-            bartender.AddIngredientToCocktail(c, bartender.NewIngredient("Rules", "one stupid rule"));
+            bartender.AddIngredientToCocktail(c, bartender.NewIngredient("Stupid rule", 1, IngredientType.Garnish));
 
             // gets first cocktail with ingredient
-            var cc = bartender.GetCocktailsByIngredientName("Rules").FirstOrDefault();
+            var cc = bartender.GetCocktailsByIngredientName("Stupid rule").FirstOrDefault();
             // prints cocktail name
             Console.WriteLine(cc.Name);
             // prints all ingredients in cocktail
             foreach (var item in cc.Ingredients)
             {
-                Console.WriteLine(item.Name + " - " + item.Amount);
+                Console.WriteLine(item.Name + " - " + item.Amount + " - " + item.Type);
             }
 
             // tries to remove ingredient from cocktail
-            if (bartender.RemoveIngredientFromCocktail(cc, cc.Ingredients.Where(i => i.Name == "Rules").FirstOrDefault()))
+            if (bartender.RemoveIngredientFromCocktail(cc, cc.Ingredients.Where(i => i.Name == "Stupid rule").FirstOrDefault()))
             {
                 // if removed print
                 Console.WriteLine("Ingredient was removed");
@@ -97,8 +97,8 @@ namespace CocktailUI
             }
 
             List<Ingredient> ingredients = new List<Ingredient>();
-            ingredients.Add(bartender.NewIngredient("kage", "1kg"));
-            ingredients.Add(bartender.NewIngredient("fisk", "5kg"));
+            ingredients.Add(bartender.NewIngredient("kage", 1, IngredientType.Edible));
+            ingredients.Add(bartender.NewIngredient("fisk", 5, IngredientType.Edible));
             Cocktail newcocktail = bartender.NewCocktail("Tester", ingredients);
             //bartender.AddCocktail(newcocktail);
 
@@ -138,7 +138,7 @@ namespace CocktailUI
             {
                 foreach (var ing in item.Ingredients)
                 {
-                    Console.WriteLine(ing.Name + " - " + ing.Id);
+                    Console.WriteLine(ing.Name + " - " + ing.Id + " - " + ing.Type);
                 }
             }
             // debug
