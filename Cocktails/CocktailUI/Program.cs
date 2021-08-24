@@ -143,6 +143,9 @@ namespace CocktailUI
             }
             // debug
 
+            // interface method
+            a.FirstOrDefault().DrinkAll();
+
             Console.ReadLine();
         }
     }
