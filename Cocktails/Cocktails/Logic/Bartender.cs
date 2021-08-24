@@ -137,19 +137,18 @@ namespace Cocktails.Logic
 
         public bool AddCocktail(Cocktail cocktail)
         {
-            // tries to add cocktail
-            var res = ct.Cocktails.Add(cocktail);
-            // if added res = cocktail
-            if (res != null)
+            // checks if cocktail exists
+            if (ct.Cocktails.Any(c => c.Id == cocktail.Id))
             {
-                // if added save changes and return true
-                ct.SaveChanges();
-                return true;
+                // if exists return false
+                return false;
             }
             else
             {
-                // if not added return false
-                return false;
+                // if none found, add cocktail and save to db
+                ct.Cocktails.Add(cocktail);
+                ct.SaveChanges();
+                return true;
             }
         }
     }

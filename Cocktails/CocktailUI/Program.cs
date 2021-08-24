@@ -113,6 +113,16 @@ namespace CocktailUI
                 // if not added print
                 Console.WriteLine("Cocktail was not added");
             }
+            if (bartender.AddCocktail(newcocktail))
+            {
+                // if added print
+                Console.WriteLine("Cocktail was added");
+            }
+            else
+            {
+                // if not added print
+                Console.WriteLine("Cocktail was not added");
+            }
 
             // gets all cocktails
             a = bartender.GetCocktails();
