@@ -1,0 +1,15 @@
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\CocktailUI.exe.config
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\CocktailUI.exe
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\CocktailUI.pdb
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\Cocktails.dll
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\EntityFramework.dll
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\Cocktails.pdb
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\Cocktails.dll.config
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\EntityFramework.xml
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\obj\Debug\CocktailUI.csproj.AssemblyReference.cache
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\obj\Debug\CocktailUI.csproj.CoreCompileInputs.cache
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\obj\Debug\CocktailUI.csproj.CopyComplete
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\obj\Debug\CocktailUI.exe
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\obj\Debug\CocktailUI.pdb
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marti\source\repos\H3\Cocktails\CocktailUI\bin\Debug\EntityFramework.SqlServer.xml
