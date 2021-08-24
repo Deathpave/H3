@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cocktails.DataModels.Interfaces
+namespace Cocktails.DataModels
 {
-    internal interface IDrink
+    public class Soda : Drink
     {
-        void DrinkAmount(int ml);
-        void DrinkAll();
+
     }
 }

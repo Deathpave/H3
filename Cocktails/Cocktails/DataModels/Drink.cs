@@ -8,18 +8,14 @@ using System.Threading.Tasks;
 
 namespace Cocktails.DataModels
 {
-    [Table("Cocktails")]
-    public class Cocktail : Drink
+    [Table("Drink")]
+    public abstract class Drink
     {
-        //[Key]
-        //public int Id { get; set; }
+        [Key]
+        public int Id { get; set; }
 
-        //public string Name { get; set; }
+        public string Name { get; set; }
 
-        //public List<Ingredient> Ingredients { get; set; }
-
-        public Cocktail()
-        {
-        }
+        public List<Ingredient> Ingredients { get; set; }
     }
 }

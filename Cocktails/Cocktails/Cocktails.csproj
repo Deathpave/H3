@@ -68,10 +68,11 @@
   <ItemGroup>
     <Compile Include="Dal\Context.cs" />
     <Compile Include="DataModels\Cocktail.cs" />
+    <Compile Include="DataModels\Drink.cs" />
     <Compile Include="DataModels\Ingredient.cs" />
     <Compile Include="DataModels\IngredientType.cs" />
-    <Compile Include="DataModels\Interfaces\IDrink.cs" />
     <Compile Include="DataModels\MeasureUnit.cs" />
+    <Compile Include="DataModels\Soda.cs" />
     <Compile Include="Logic\Bartender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
