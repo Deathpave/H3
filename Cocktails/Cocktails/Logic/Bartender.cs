@@ -11,7 +11,7 @@ namespace Cocktails.Logic
     public class Bartender
     {
         // creates a new dbcontext
-        Context ct = new Context();
+        private Context ct = new Context();
 
         public Bartender()
         {
